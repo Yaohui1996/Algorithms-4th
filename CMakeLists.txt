@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(Algorithm_4th CXX)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+add_executable(main main.cpp)
+target_include_directories(main PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
