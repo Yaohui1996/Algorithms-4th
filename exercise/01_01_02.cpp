@@ -4,14 +4,19 @@
 // c. 4.1 >= 4
 // d. 1 + 2 + "3"
 
-#include <iostream>
 #include <string>
 
+#include "StdOut.h"
+using namespace yaohui::algorithms_4th;
+
 int main() {
-    std::cout << (1 + 2.236) / 2 << std::endl;
-    std::cout << 1 + 2 + 3 + 4.0 << std::endl;
+    StdOut::println((1 + 2.236) / 2);
+    StdOut::println(1 + 2 + 3 + 4.0);
     std::string result = 4.1 >= 4 ? "TRUE" : "FALSE";
-    std::cout << result << std::endl;
-    std::cout << 1 + 2 + "3" << std::endl;
+    StdOut::println(result);
+
+    /* 错误用法 */
+    // StdOut::println(1 + 2 + "3");
+    /* 错误用法 */
     return 0;
 }
