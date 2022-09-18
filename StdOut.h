@@ -12,7 +12,12 @@ namespace algorithms_4th {
 class StdOut {
 public:
     static void print(std::string s) { std::cout << s; }
-    static void println(std::string s) { std::cout << s << std::endl; }
+
+    template <typename T>
+    static void println(const T &s) {
+        std::cout << s << std::endl;
+    }
+    
     static void println() { std::cout << std::endl; }
 
     using arg_builder_t = std::function<void(std::ostream &)>;

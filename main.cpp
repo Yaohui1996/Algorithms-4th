@@ -5,6 +5,7 @@
 #include <vector>
 
 #include "BinarySearch.h"
+#include "StdIn.h"
 #include "StdOut.h"
 #include "StdRandom.h"
 
@@ -19,7 +20,7 @@ void print_vector(const std::vector<BuildInType>& vec) {
         }
     }
 }
-int main() {
+int main(int argc, char* argv[]) {
     std::vector<std::string> v1 = {"aa", "gg", "cc", "bb", "ee"};
     std::vector<int> v2 = {3, 11, 765, 24, 2134, 6654, 34, 2231, 5431};
     std::sort(v1.begin(), v1.end());
@@ -52,6 +53,20 @@ int main() {
     std::string s = "world";
     StdOut::mini_printf("aaa{},hello,{}.\n", a, s);
     // StdOut::printf("age: {} hello,{}", a, s);
+
+    std::vector<int> whitelist = StdIn::readInts(argv[1]);
+    // print_vector(whitelist);
+    std::sort(whitelist.begin(), whitelist.end());
+    // print_vector(whitelist);
+
+    std::vector<int> keys = StdIn::readInts(argv[2]);
+    // print_vector(keys);
+
+    for (const auto& key : keys) {
+        if (BinarySearch::rank(key, whitelist) < 0) {
+            StdOut::println(key);
+        }
+    }
 
     return 0;
 }
