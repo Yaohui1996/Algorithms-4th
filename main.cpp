@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <functional>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -49,7 +50,8 @@ int main() {
 
     int a = 100;
     std::string s = "world";
-    StdOut::printf("age: {} hello, {}", a, s);
+    StdOut::mini_printf("aaa{},hello,{}.\n", a, s);
+    // StdOut::printf("age: {} hello,{}", a, s);
 
     return 0;
 }
