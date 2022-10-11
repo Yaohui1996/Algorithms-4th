@@ -23,4 +23,7 @@ add_executable(01_01_14 exercise/01_01_14.cpp)
 add_executable(01_01_15 exercise/01_01_15.cpp)
 add_executable(01_01_16 exercise/01_01_16.cpp)
 add_executable(01_01_17 exercise/01_01_17.cpp)
-
+add_executable(01_01_18 exercise/01_01_18.cpp)
+add_executable(01_01_19 exercise/01_01_19.cpp)
+add_executable(01_01_20 exercise/01_01_20.cpp)
+add_executable(01_01_21 exercise/01_01_21.cpp)
