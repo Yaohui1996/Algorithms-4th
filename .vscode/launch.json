@@ -29,6 +29,22 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
-        }
+        },
+        {
+            "name": "01_01_23",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/01_01_23",
+            "args": [
+                "${workspaceFolder}/data/largeAllowlist.txt",
+                "${workspaceFolder}/data/largeText.txt"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+
     ]
 }

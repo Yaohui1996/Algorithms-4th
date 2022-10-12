@@ -34,7 +34,7 @@ public:
 
 private:
     template <typename T>
-    static int rank_helper(const T& key, const std::vector<T>& v, int lo, int hi) {
+    static int rank_helper(const T& key, const std::vector<T>& v, const int lo, const int hi) {
         if (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
             if (key < v[mid]) {
